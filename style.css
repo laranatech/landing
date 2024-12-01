@@ -1,10 +1,10 @@
 :root {
-	--unit: 4px;
-	--unit-1: 8px;
-	--unit-2: 12px;
-	--unit-3: 16px;
-	--unit-4: 24px;
-	--unit-5: 32px;
+	--u: 4px;
+	--u-1: 8px;
+	--u-2: 12px;
+	--u-3: 16px;
+	--u-4: 24px;
+	--u-5: 32px;
 
 	--accent: #3caa3c;
 	--dark: #333;
@@ -16,7 +16,7 @@
 	--component-bg: var(--white);
 	--component-hover-bg: var(--pale);
 	--component-fg: var(--dark);
-	--radius: var(--unit);
+	--radius: var(--u);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,7 +38,7 @@
 html, body {
 	width: 100%;
 	height: 100%;
-	font-size: var(--unit-2);
+	font-size: var(--u-2);
 	font-size: 1rem;
 	background-color: var(--bg);
 	color: var(--fg);
@@ -54,8 +54,8 @@ body {
 	max-width: 720px;
 	display: flex;
 	flex-direction: column;
-	gap: var(--unit-2);
-	padding: var(--unit-5);
+	gap: var(--u-2);
+	padding: var(--u-5);
 }
 
 .logo {
@@ -63,7 +63,7 @@ body {
 }
 
 h1 {
-	font-size: var(--unit-5);
+	font-size: var(--u-5);
 }
 
 a, a:visited {
@@ -72,4 +72,10 @@ a, a:visited {
 
 a:hover {
 	text-decoration: none;
+}
+
+.block {
+	display: flex;
+	flex-direction: column;
+	gap: var(--u-2);
 }
